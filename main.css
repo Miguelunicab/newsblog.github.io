@@ -1,0 +1,203 @@
+:root {
+     --gray: rgb(107, 107, 107); 
+     --light-gray: rgb(160, 160, 160); 
+     --light-gray-o1: rgba(160, 160, 160, 0.1);
+     --purple: #904eb6;
+     --black: #070707;
+     --white: #ececec;
+}
+
+h1 {
+     font-size: 4rem !important;
+}
+
+h2 {
+     font-size: 3rem !important;
+}
+
+h3 {
+     font-size: 2.5rem !important;
+}
+
+h4 {
+     font-size: 2rem !important;
+}
+
+p {
+     font-size: 1.5rem !important;
+}
+
+a {
+     font-size: 1.3rem !important;
+     text-decoration: none !important;
+}
+
+.special-paragraph {
+     font-size: 1.2rem !important;
+}
+
+/* Black Color */
+.border-white {
+     border-color: var(--white);
+}
+
+.bg-white {
+     background-color: var(--white);
+}
+
+.tx-white {
+     color: var(--white);
+}
+
+
+/* Black Color */
+.border-black {
+     border-color: var(--black);
+}
+
+.bg-black {
+     background-color: var(--black);
+}
+
+.tx-black {
+     color: var(--black);
+}
+
+/* Purple Color */
+.border-purple {
+     border-color: var(--purple);
+}
+
+.bg-purple {
+     background-color: var(--purple);
+}
+
+.tx-purple {
+     color: var(--purple);
+}
+
+/* Gray Color */
+.border-gray {
+     border-color: var(--gray);
+}
+
+.bg-gray {
+     background-color: var(--gray);
+}
+
+.bg-light-gray-o1 {
+     background-color: var(--light-gray-o1);
+}
+
+.custom-bg-gray {
+     background: linear-gradient(to top, var(--white) 60%, rgba(160, 160, 160, 0.4) 100%);
+}
+
+.tx-gray {
+     color: var(--gray);
+}
+
+.border-light-gray {
+     border-color: var(--light-gray);
+}
+
+.bg-light-gray {
+     background-color: var(--light-gray);
+}
+
+.tx-light-gray {
+     color: var(--light-gray);
+}
+
+
+/* serif */
+
+.font-serif {
+     font-family: serif;
+}
+
+.font-serifbold {
+     font-family: serif;
+     font-weight: 700;
+}
+
+/* Utilities */
+
+.btn-1 {
+     background-color: var(--black);
+     color: var(--white);
+     width: 100%;
+
+     padding: .5rem .3rem;
+     text-align: center;
+     border-radius: .5rem;
+     transition: background-color .15s ease-in;
+}
+
+.btn-1:hover {
+     background-color: var(--purple);
+}
+
+.btn-2 {
+     display: inline-block;
+}
+
+.btn-2::after {
+     display: block;
+     content: "";
+     background-color: var(--black);
+     height: 2px;
+
+     width: 0%;
+     transition: width .1s ease-in;
+}
+
+.btn-2:hover::after {
+     width: 100%;
+}
+
+.my-9 {
+     margin-top: 5rem;
+     margin-bottom: 5rem;
+}
+
+/* Blog */
+.img-blog {
+     position: relative;
+     height: 18rem;
+     z-index: -1;
+}
+
+.blog-card {
+     backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px); /* soporte Safari */
+     margin-top: -3.5rem;
+     min-height: 35rem;
+     
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+.img-trending {
+     mask-image: linear-gradient(to left, white 65%, transparent 100%);
+}
+
+.newsletter-input {
+     width: 100%;
+     padding: .5rem;
+     border: solid;
+     border-width: 2px;
+     border-radius: .6rem;
+     border-color: var(--light-gray) !important;
+}
+
+.live-circle::after {
+     display: inline-block;
+     content: "";
+     width: 1.2rem;
+     height: 1.2rem;
+     background-color: #ca4545;
+     border-radius: 100%;
+     margin-left: .5rem;
+}
